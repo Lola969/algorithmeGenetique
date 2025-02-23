@@ -59,7 +59,25 @@ Lancer le script `opam-bootstrap.sh` pour installer OCaml, OPAM et toutes les d�
 cd belenios/
 ./opam-bootstrap.sh
 ```
-Ces dépendances sont
+
+Ces dépendances sont :
+
+- base64
+- hex
+- dune
+- atdgen
+- zarith
+- cryptokit
+- calendar
+- cmdliner
+- sqlite3
+- ocsipersist-sqlite-config
+- eliom
+- gettext-camomile
+- ocamlnet
+- ocamlformat
+- markup
+
 
 
 **Cette commande peut durer environ 30 minutes et télécharger jusqu'à 3 Go de dépendances.**
