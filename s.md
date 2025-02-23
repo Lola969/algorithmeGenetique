@@ -110,22 +110,21 @@ Si tout fonctionne bien, Belenios est prêt à être exécuté.
 
 Belenios utilise **Ocsigenserver** comme serveur HTTP. Il peut être configuré en utilisant le fichier `demo/ocsigenserver.conf.in`.
 
-### **Créer un fichier de configuration valide**
+### 4.1 Créer un fichier de configuration valide
 
 La configuration détaillée sera expliquée dans un autre fichier.
 
-1. **Copie le fichier modèle fourni** :
-   ```bash
-   cp demo/ocsigenserver.conf.in demo/ocsigenserver.conf
-   ```
+Copie le fichier modèle fourni :
+```bash
+cp demo/ocsigenserver.conf.in demo/ocsigenserver.conf
+```
 
-2. **Édite le fichier de configuration** :
-   ```bash
-   nano demo/ocsigenserver.conf
-   ```
-Vérifie que les chemins pointent bien vers les bons fichiers et ajuste-les si nécessaire.
+Édite le fichier de configuration :
+```bash
+nano demo/ocsigenserver.conf
+```
 
-### **Lancer Ocsigenserver**
+### 4.2 Lancer Ocsigenserver
 
 1. **Exécute cette commande pour démarrer le serveur avec la configuration** :
    ```bash
