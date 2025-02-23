@@ -130,12 +130,12 @@ Belenios utilise **Ocsigenserver** comme serveur HTTP. Il peut être configuré 
 
 La configuration détaillée sera expliquée dans un autre fichier.
 
-Copie le fichier modèle fourni :
+Copier le fichier modèle fourni :
 ```bash
 cp demo/ocsigenserver.conf.in demo/ocsigenserver.conf
 ```
 
-Édite le fichier de configuration :
+Éditer le fichier de configuration :
 ```bash
 nano demo/ocsigenserver.conf
 ```
