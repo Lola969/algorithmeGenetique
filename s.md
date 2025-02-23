@@ -2,7 +2,7 @@
 
 ## 1. Objectif
 
-L'objectif de cette tâche est d'installer **Belenios** sur un la machine application.
+L'objectif de cette tâche est d'installer **Belenios** sur la machine application.
 
 ---
 
@@ -12,7 +12,7 @@ L'objectif de cette tâche est d'installer **Belenios** sur un la machine applic
 
 #### Mettre à jour le système
 
-Mettre à jour du système :
+Mise à jour du système :
 
 ```bash
 sudo apt update && sudo apt upgrade -y
