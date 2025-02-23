@@ -104,21 +104,6 @@ make check
 
 Si tout fonctionne bien, Belenios est prêt à être exécuté.
 
----
-
-## 4. Lancer le serveur Belenios
-
-Démarrez Belenios avec la commande suivante :
-
-```bash
-./_build/default/server/belenios_server.exe
-```
-
-Si vous souhaitez exécuter Belenios en arrière-plan :
-
-```bash
-nohup ./_build/default/server/belenios_server.exe > belenios.log 2>&1 &
-```
 
 ---
 ## 4. Configurer le serveur avec Ocsigenserver
@@ -145,10 +130,5 @@ Vérifie que les chemins pointent bien vers les bons fichiers et ajuste-les si n
 1. **Exécute cette commande pour démarrer le serveur avec la configuration** :
    ```bash
    ocsigenserver -c demo/ocsigenserver.conf
-   ```
-
-2. **Si le port 8000 est déjà utilisé**, tu peux modifier le fichier `demo/ocsigenserver.conf` ou lancer avec un autre port :
-   ```bash
-   ocsigenserver -c demo/ocsigenserver.conf -p 8080
    ```
 
