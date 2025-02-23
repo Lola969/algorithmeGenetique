@@ -126,8 +126,8 @@ nano demo/ocsigenserver.conf
 
 ### 4.2 Lancer Ocsigenserver
 
-1. **Exécute cette commande pour démarrer le serveur avec la configuration** :
-   ```bash
-   ocsigenserver -c demo/ocsigenserver.conf
-   ```
+Exécuter cette commande pour démarrer le serveur avec la configuration :
+```bash
+ocsigenserver -c demo/ocsigenserver.conf
+```
 
