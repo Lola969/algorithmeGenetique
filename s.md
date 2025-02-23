@@ -23,9 +23,7 @@ sudo apt update && sudo apt upgrade -y
 Les paquets suivants doivent être installés :
 
 ```bash
-sudo apt install bubblewrap build-essential libgmp-dev libsodium-dev pkg-config m4 \
-libssl-dev libsqlite3-dev wget ca-certificates zip unzip libncurses-dev \
-zlib1g-dev libgd-securityimage-perl cracklib-runtime jq npm -y
+sudo apt install bubblewrap build-essential libgmp-dev libsodium-dev pkg-config m4 libssl-dev libsqlite3-dev wget ca-certificates zip unzip libncurses-dev zlib1g-dev libgd-securityimage-perl cracklib-runtime jq npm
 ```
 
 ---
