@@ -2,7 +2,7 @@
 
 ## 1. Objectif
 
-L'objectif de cette tâche est d'installer et de configurer **Belenios**, un système de vote électronique, sur un serveur.
+L'objectif de cette tâche est d'installer **Belenios** sur un la machine application.
 
 ---
 
@@ -12,7 +12,7 @@ L'objectif de cette tâche est d'installer et de configurer **Belenios**, un sys
 
 #### Mettre à jour le système
 
-Avant d'installer les dépendances nécessaires, commencez par mettre à jour votre système :
+Mettre à jour du système :
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -32,7 +32,7 @@ zlib1g-dev libgd-securityimage-perl cracklib-runtime jq npm -y
 
 ### 2.2 Cloner le dépôt Git de Belenios
 
-Il est recommandé d'utiliser un dépôt **Git** plutôt qu'un téléchargement d'archive afin d'avoir accès aux mises à jour.
+Utiliser un dépôt **Git** plutôt qu'un téléchargement d'archive afin d'avoir accès aux mises à jour.
 
 #### Installer Git
 
@@ -53,23 +53,23 @@ cd belenios/
 
 ### 3.1 Installation d’OCaml, OPAM et des dépendances
 
-Lancez le script `opam-bootstrap.sh` pour installer OCaml, OPAM et toutes les dépendances nécessaires. Assurez-vous que vous êtes dans le répertoire de Belenios :
+Lancer le script `opam-bootstrap.sh` pour installer OCaml, OPAM et toutes les dépendances nécessaires sur le répertoire de Belenios :
 
 ```bash
 cd belenios/
 ./opam-bootstrap.sh
 ```
+Ces dépendances sont
 
-⏳ **Cette commande peut durer environ 30 minutes et télécharger jusqu'à 3 Go de dépendances.**
+
+**Cette commande peut durer environ 30 minutes et télécharger jusqu'à 3 Go de dépendances.**
 
 ---
 
 ### 3.2 Ajouter OCaml à `.bashrc` pour rendre la configuration permanente
 
-Ajoutez l'environnement OCaml à votre fichier de configuration shell :
-
 ```bash
-echo 'source /home/ubuntu/belenios/env.sh' >> ~/.bashrc
+echo 'source ~/belenios/env.sh' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -77,20 +77,18 @@ source ~/.bashrc
 
 ### 3.3 Supprimer les fichiers temporaires
 
-Après l'installation, nettoyez les fichiers temporaires :
-
 ```bash
-rm -rf /home/ubuntu/.belenios/bootstrap/src
+rm -rf ~/.belenios/bootstrap/src
 ```
 
 ---
 
 ### 3.4 Compiler la version de production
 
-Compilez Belenios en version **release** :
+Compiler Belenios en version **release** :
 
 ```bash
-cd /home/ubuntu/belenios
+cd ~/belenios
 make build-release-server
 ```
 
@@ -98,13 +96,13 @@ make build-release-server
 
 ### 3.5 Vérifier que tout fonctionne
 
-Une fois la compilation terminée, exécutez le test suivant pour vous assurer que l'installation est correcte :
+Une fois la compilation terminée, exécuter le test suivant pour s'assurer que l'installation est correcte :
 
 ```bash
 make check
 ```
 
-Si tout fonctionne bien, vous êtes prêt à exécuter Belenios.
+Si tout fonctionne bien, Belenios est prêt à être exécuté.
 
 ---
 
