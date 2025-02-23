@@ -121,3 +121,34 @@ nohup ./_build/default/server/belenios_server.exe > belenios.log 2>&1 &
 ```
 
 ---
+## 4. Configurer le serveur avec Ocsigenserver
+
+Belenios utilise **Ocsigenserver** comme serveur HTTP. Il peut être configuré en utilisant le fichier `demo/ocsigenserver.conf.in`.
+
+### **Créer un fichier de configuration valide**
+
+La configuration détaillée sera expliquée dans un autre fichier.
+
+1. **Copie le fichier modèle fourni** :
+   ```bash
+   cp demo/ocsigenserver.conf.in demo/ocsigenserver.conf
+   ```
+
+2. **Édite le fichier de configuration** :
+   ```bash
+   nano demo/ocsigenserver.conf
+   ```
+Vérifie que les chemins pointent bien vers les bons fichiers et ajuste-les si nécessaire.
+
+### **Lancer Ocsigenserver**
+
+1. **Exécute cette commande pour démarrer le serveur avec la configuration** :
+   ```bash
+   ocsigenserver -c demo/ocsigenserver.conf
+   ```
+
+2. **Si le port 8000 est déjà utilisé**, tu peux modifier le fichier `demo/ocsigenserver.conf` ou lancer avec un autre port :
+   ```bash
+   ocsigenserver -c demo/ocsigenserver.conf -p 8080
+   ```
+
